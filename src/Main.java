@@ -5,16 +5,33 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         // Task #1
-        System.out.println("Задача №1");
         int [] integers = new int [] {1, 2, 3};
         double [] fractional = new double [] {1.57, 7.654, 9.986};
         boolean[] truLse = new boolean [] {1 < 2, 2 > 3};
 
         // Task #2
         System.out.println("Задача №2");
-        System.out.println(Arrays.toString(integers));
-        System.out.println(Arrays.toString(fractional));
-        System.out.println(Arrays.toString(truLse));
+        for (int i = 0; i < integers.length; i++) {
+            System.out.print(integers[i]);
+            if (i < integers.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int fr = 0; fr < fractional.length; fr++) {
+            System.out.print(fractional[fr]);
+            if (fr < fractional.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int tf = 0; tf < truLse.length; tf++) {
+            System.out.print(truLse[tf]);
+            if (tf < truLse.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
 
         // Task #3
         System.out.println("Задача №3");
@@ -41,8 +58,9 @@ public class Main {
         System.out.println();
 
         // Task #4
+        // всё сломалось
         System.out.println("Задача №4");
-        for (int i = 0; i <= 2; i++) {
+        for (int i = 0; i <= integers.length; i++) {
             if (integers[i] % 2 == 0) {
                 System.out.print(integers[i]);
             } else {
