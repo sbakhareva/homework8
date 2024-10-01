@@ -60,7 +60,7 @@ public class Main {
         // Task #4
         // всё сломалось
         System.out.println("Задача №4");
-        for (int i = 0; i <= integers.length; i++) {
+        for (int i = 0; i <= integers.length - 1; i++) {
             if (integers[i] % 2 == 0) {
                 System.out.print(integers[i]);
             } else {
