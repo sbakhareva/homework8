@@ -58,7 +58,6 @@ public class Main {
         System.out.println();
 
         // Task #4
-        // всё сломалось
         System.out.println("Задача №4");
         for (int i = 0; i <= integers.length - 1; i++) {
             if (integers[i] % 2 == 0) {
